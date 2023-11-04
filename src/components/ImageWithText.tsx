@@ -1,24 +1,16 @@
 import React from 'react';
-import { IonText } from '@ionic/react';
+import { IonImg, IonText } from '@ionic/react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const ImageWithText: React.FC<{ imageSrc: string; text: string }> = ({ imageSrc, text }) => {
+const ImageWithText: React.FC<{ 
+  imageSrc: string; 
+  text: string;
+  style:any;
+}> = ({ imageSrc, text, style }) => {
   return (
     <div className="image-container" style={{ textAlign: 'center' }}>
-    <img
-      src={imageSrc}
-      alt="Image"
-      style={{
-        display: 'block',
-        margin: '0 auto',
-        width: '142px', 
-        height: '122px',
-        position: 'relative',
-        top: '32px', 
-        left: '0', 
-      }}
-    />
-    <IonText style={{ color: 'black', textAlign: 'center', position: 'relative',
-      top: '32px', }}>{text}</IonText>
+      <IonImg src={ imageSrc } style={ style }/>
+      <IonText className='m-5'>{text}</IonText>
   </div>
   );
 };
