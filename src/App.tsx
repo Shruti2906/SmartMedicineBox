@@ -22,7 +22,7 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import SelectUser from './pages/SelectUser';
-import Login from './pages/Login';
+import Login from './pages/LoginPage/Login';
 import Register from './pages/Register';
 import SplashScreen from './pages/SplashScreen/SplashScreen';
 
@@ -33,7 +33,7 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/home">
-          <Home />
+          <SplashScreen />
         </Route>
         <Route exact path="/selectUser">
           <SelectUser />

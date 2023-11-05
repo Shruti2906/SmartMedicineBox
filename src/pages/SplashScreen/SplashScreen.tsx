@@ -1,4 +1,4 @@
-import { IonContent, IonPage } from "@ionic/react";
+import { IonButton, IonContent, IonPage } from "@ionic/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './splashScreen.css';
 import ImageWithText from "../../components/ImageWithText";
@@ -13,7 +13,7 @@ const SplashScreen: React.FC = () => {
         <h1 className="text-center" style={{ fontSize:"50px", color:"#FF0101" }}>Smart Medicine Box</h1>
         </div>
           <ImageWithText 
-            imageSrc="src\assets\images\splashScreen.png"
+            imageSrc="../assets/images/splashScreen.png"
             text=""
             style={{
               width: "366px",
@@ -21,6 +21,9 @@ const SplashScreen: React.FC = () => {
               display: "inlineBlock"
             }}
           />
+
+          <IonButton routerLink="/selectUser">Select User</IonButton>
+          <IonButton routerLink="/login">Login</IonButton>
         </div>
       </IonPage>
     </IonContent>
