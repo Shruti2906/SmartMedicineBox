@@ -22,9 +22,11 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import SelectUser from './pages/SelectUser';
-import Login from './pages/LoginPage/Login';
+import MobileVerification from './pages/MobileVerification/mobileVerification';
 import Register from './pages/Register';
 import SplashScreen from './pages/SplashScreen/SplashScreen';
+import Login from './pages/Login/login';
+import Signup from './pages/Signup/signup';
 
 setupIonicReact();
 
@@ -38,8 +40,8 @@ const App: React.FC = () => (
         <Route exact path="/selectUser">
           <SelectUser />
         </Route>
-        <Route exact path="/login">
-          <Login />
+        <Route exact path="/mobileVerification">
+          <MobileVerification />
         </Route>
         <Route exact path="/register">
           <Register />
@@ -49,6 +51,14 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/splash">
           <SplashScreen/>
+        </Route>
+
+        <Route exact path="/login">
+          <Login/>
+        </Route>
+
+        <Route exact path="/signup">
+          <Signup/>
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

@@ -53,9 +53,7 @@ const SelectUser: React.FC = () => {
               height: "122px",top: "355px",left: "116px" , marginBottom:"10px"
             }}
           />
-
-
-<IonButton className="" routerLink="/login" >Login</IonButton>
+          <IonButton className="" routerLink="/mobileVerification" >Login</IonButton>
         </div>
       </IonContent>
     </IonPage>

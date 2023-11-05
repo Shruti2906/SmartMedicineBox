@@ -9,13 +9,12 @@ import {
   IonPage,
   IonText,
 } from "@ionic/react";
-import "./loginpage.css";
+import "./mobileVerification.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
 import { eye, eyeOff } from "ionicons/icons";
 
-const Login: React.FC = () => {
-  const [password, setPassword] = useState("");
+const MobileVerification: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -81,4 +80,4 @@ const Login: React.FC = () => {
   );
 };
 
-export default Login;
+export default MobileVerification;

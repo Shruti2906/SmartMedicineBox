@@ -13,7 +13,7 @@ const SplashScreen: React.FC = () => {
         <h1 className="text-center" style={{ fontSize:"50px", color:"#FF0101" }}>Smart Medicine Box</h1>
         </div>
           <ImageWithText 
-            imageSrc="../assets/images/splashScreen.png"
+            imageSrc="src\assets\images\splashScreen.png"
             text=""
             style={{
               width: "366px",
@@ -23,7 +23,9 @@ const SplashScreen: React.FC = () => {
           />
 
           <IonButton routerLink="/selectUser">Select User</IonButton>
+          <IonButton routerLink="/mobileVerification">Verification</IonButton>
           <IonButton routerLink="/login">Login</IonButton>
+
         </div>
       </IonPage>
     </IonContent>
