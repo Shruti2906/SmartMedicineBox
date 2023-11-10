@@ -27,6 +27,9 @@ import Register from './pages/Register';
 import SplashScreen from './pages/SplashScreen/SplashScreen';
 import Login from './pages/Login/login';
 import Signup from './pages/Signup/signup';
+import BluetoothScanning from './pages/BluetoothScanning/bluetoothScanning';
+import BluetoothComponent from './pages/BluetoothScanning/bluetoothScanning';
+import Homepage from './pages/Homepage/homepage';
 
 setupIonicReact();
 
@@ -35,7 +38,7 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/home">
-          <SplashScreen />
+          <MobileVerification />
         </Route>
         <Route exact path="/selectUser">
           <SelectUser />
@@ -59,6 +62,13 @@ const App: React.FC = () => (
 
         <Route exact path="/signup">
           <Signup/>
+        </Route>
+        <Route exact path="/bluetoothScan">
+          <BluetoothComponent/>
+        </Route>
+
+        <Route exact path="/homescreen">
+          <Homepage/>
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

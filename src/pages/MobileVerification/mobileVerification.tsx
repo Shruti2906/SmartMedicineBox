@@ -14,13 +14,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
 import { eye, eyeOff } from "ionicons/icons";
 
+
 const MobileVerification: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false);
-
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
-
   return (
     <IonPage style={{ color: "black" }}>
       <div className="container">
@@ -70,7 +69,7 @@ const MobileVerification: React.FC = () => {
             size="large"
             onClick={togglePasswordVisibility}
           ></IonIcon>
-          <IonButton type="button" id="button-addon2" color="light">
+          <IonButton type="button" id="button-addon2" color="light" routerLink="/login">
             Verify
           </IonButton>
         </div>
@@ -81,3 +80,7 @@ const MobileVerification: React.FC = () => {
 };
 
 export default MobileVerification;
+function useEffect(arg0: () => void, arg1: never[]) {
+  throw new Error("Function not implemented.");
+}
+

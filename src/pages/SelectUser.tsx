@@ -8,7 +8,10 @@ import {
   IonToolbar,
 } from "@ionic/react";
 import ImageWithText from "../components/ImageWithText";
-
+import user from "/src/assets/images/user.png";
+import hospital from "/src/assets/images/Hospital.png";
+import superAdmin from "/src/assets/images/superAdmin.png";
+ 
 const SelectUser: React.FC = () => {
   return (
     <IonPage>
@@ -33,21 +36,21 @@ const SelectUser: React.FC = () => {
 
         <div className="image-container text-center">
           <ImageWithText
-            imageSrc="src/assets/images/user.png"
+            imageSrc={ user }
             text="Single User"
             style={{
               height: "122px",top: "355px",left: "116px", marginBottom:"10px"
             }}
           />
           <ImageWithText
-            imageSrc="src/assets/images/Hospital.png"
+            imageSrc={ hospital }
             text="Hospital"
             style={{
               height: "122px",top: "355px",left: "116px" , marginBottom:"10px"
             }}
           />
           <ImageWithText
-            imageSrc="src/assets/images/superAdmin.png"
+            imageSrc={ superAdmin }
             text="Super Admin"
             style={{
               height: "122px",top: "355px",left: "116px" , marginBottom:"10px"

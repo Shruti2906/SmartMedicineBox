@@ -2,7 +2,7 @@ import { IonButton, IonContent, IonPage } from "@ionic/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './splashScreen.css';
 import ImageWithText from "../../components/ImageWithText";
-
+import splashImage from '/src/assets/images/splashScreen.png';
 const SplashScreen: React.FC = () => {
   return (
     <IonContent className="text-center">
@@ -13,7 +13,7 @@ const SplashScreen: React.FC = () => {
         <h1 className="text-center" style={{ fontSize:"50px", color:"#FF0101" }}>Smart Medicine Box</h1>
         </div>
           <ImageWithText 
-            imageSrc="src\assets\images\splashScreen.png"
+            imageSrc={ splashImage}
             text=""
             style={{
               width: "366px",
@@ -22,6 +22,7 @@ const SplashScreen: React.FC = () => {
             }}
           />
 
+          <IonButton routerLink="/homescreen">Homepage</IonButton>
           <IonButton routerLink="/selectUser">Select User</IonButton>
           <IonButton routerLink="/mobileVerification">Verification</IonButton>
           <IonButton routerLink="/login">Login</IonButton>

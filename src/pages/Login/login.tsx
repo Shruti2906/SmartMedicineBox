@@ -60,6 +60,7 @@ import CheckboxComponent from "../../components/Checkbox/checkboxComponent";
                 </div>
 
                 <div className="text-center">
+                <IonRouterLink routerLink="/homescreen">
                 <ButtonComponent title="Login" style={{ backgroundColor: "#FF0101", 
                                                             color:"white",
                                                             padding:"10px 50px",
@@ -67,6 +68,7 @@ import CheckboxComponent from "../../components/Checkbox/checkboxComponent";
                                                             fontSize:"25px",
                                                             borderRadius:"14px"
                                                             }}/>
+                </IonRouterLink>
                 </div>
                 <IonText>
                     <h6 className="text-center">Don't have an account? 
