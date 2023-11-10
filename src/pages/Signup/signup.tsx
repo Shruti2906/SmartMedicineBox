@@ -84,7 +84,7 @@ const Signup: React.FC = () => {
                 </div>
 
                 <div className="text-center">
-                <ButtonComponent title="Login Now" style={{ backgroundColor: "#FF0101", 
+                <ButtonComponent title="Sign Up" style={{ backgroundColor: "#FF0101", 
                                                             color:"white",
                                                             padding:"10px 30px",
                                                             margin:"20px",

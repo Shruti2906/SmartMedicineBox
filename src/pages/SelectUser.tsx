@@ -3,6 +3,7 @@ import {
   IonContent,
   IonHeader,
   IonPage,
+  IonRouterLink,
   IonText,
   IonTitle,
   IonToolbar,
@@ -35,13 +36,15 @@ const SelectUser: React.FC = () => {
         </div>
 
         <div className="image-container text-center">
-          <ImageWithText
-            imageSrc={ user }
-            text="Single User"
-            style={{
-              height: "122px",top: "355px",left: "116px", marginBottom:"10px"
-            }}
-          />
+          <IonRouterLink routerLink="/mobileVerification">
+            <ImageWithText
+              imageSrc={ user }
+              text="Single User"
+              style={{
+                height: "122px",top: "355px",left: "116px", marginBottom:"10px"
+              }}
+            />
+          </IonRouterLink>
           <ImageWithText
             imageSrc={ hospital }
             text="Hospital"
@@ -56,7 +59,7 @@ const SelectUser: React.FC = () => {
               height: "122px",top: "355px",left: "116px" , marginBottom:"10px"
             }}
           />
-          <IonButton className="" routerLink="/mobileVerification" >Login</IonButton>
+          {/* <IonButton className="" routerLink="/mobileVerification" >Login</IonButton> */}
         </div>
       </IonContent>
     </IonPage>

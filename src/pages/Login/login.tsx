@@ -73,7 +73,7 @@ import CheckboxComponent from "../../components/Checkbox/checkboxComponent";
                 <IonText>
                     <h6 className="text-center">Don't have an account? 
                     <IonRouterLink routerLink="/signup">
-                      <a><span style={{ color:"#FF0101", fontWeight:"bold"}}>Sign Up</span></a>
+                      <a><span style={{ color:"#FF0101", fontWeight:"bold"}}> Sign Up</span></a>
                     </IonRouterLink>
                     </h6>
                 </IonText>

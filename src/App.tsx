@@ -38,7 +38,7 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/home">
-          <MobileVerification />
+          <SelectUser />
         </Route>
         <Route exact path="/selectUser">
           <SelectUser />
