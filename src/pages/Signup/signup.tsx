@@ -72,7 +72,7 @@ const Signup: React.FC = () => {
             </IonSelect>
 
 
-            <IonSelect className='mb-3' label="Select City" fill="outline" labelPlacement='floating' placeholder="Select State">
+            <IonSelect className='mb-3' label="Select State" fill="outline" labelPlacement='floating' placeholder="Select State">
                 <IonSelectOption value="apple">Maharashtra</IonSelectOption>
                 <IonSelectOption value="banana">Chhatisgadh</IonSelectOption>
             </IonSelect>

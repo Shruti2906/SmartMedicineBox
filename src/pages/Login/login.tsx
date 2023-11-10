@@ -35,22 +35,18 @@ import CheckboxComponent from "../../components/Checkbox/checkboxComponent";
                 <IonLabel className="label">Enter your username</IonLabel>
                 <IonInput
                 type="text"
-                label="Username"
                 labelPlacement="floating"
                 fill="outline"
                 className="form-control pl-2 mb-3"
-                placeholder="Enter username"
                 aria-label="username"
                 />
                 
                 <IonLabel className="label">Enter your password</IonLabel>
                 <IonInput
                 type="password"
-                label="Password"
                 labelPlacement="floating"
                 fill="outline"
                 className="form-control pl-2"
-                placeholder="Enter password"
                 aria-label="password"
                 />
 
@@ -61,7 +57,7 @@ import CheckboxComponent from "../../components/Checkbox/checkboxComponent";
 
                 <div className="text-center">
                 <IonRouterLink routerLink="/homescreen">
-                <ButtonComponent title="Login" style={{ backgroundColor: "#FF0101", 
+                <ButtonComponent title="Log In" style={{ backgroundColor: "#FF0101", 
                                                             color:"white",
                                                             padding:"10px 50px",
                                                             margin:"20px",
