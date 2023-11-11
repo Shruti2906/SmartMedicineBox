@@ -30,6 +30,7 @@ import Signup from './pages/Signup/signup';
 import BluetoothScanning from './pages/BluetoothScanning/bluetoothScanning';
 import BluetoothComponent from './pages/BluetoothScanning/bluetoothScanning';
 import Homepage from './pages/Homepage/homepage';
+import SignupSuccessful from './pages/signupSuccessful/signupSuccessful';
 
 setupIonicReact();
 
@@ -69,6 +70,10 @@ const App: React.FC = () => (
 
         <Route exact path="/homescreen">
           <Homepage/>
+        </Route>
+
+        <Route exact path="/signupSuccessful">
+          <SignupSuccessful/>
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

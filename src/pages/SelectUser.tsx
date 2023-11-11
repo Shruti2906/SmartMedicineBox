@@ -41,7 +41,7 @@ const SelectUser: React.FC = () => {
               imageSrc={ user }
               text="Single User"
               style={{
-                height: "122px",top: "355px",left: "116px", marginBottom:"10px"
+                height: "122px",top: "355px",left: "116px", marginBottom:"10px", color:"black"
               }}
             />
           </IonRouterLink>

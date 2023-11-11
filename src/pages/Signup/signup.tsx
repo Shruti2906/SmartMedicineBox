@@ -84,6 +84,7 @@ const Signup: React.FC = () => {
                 </div>
 
                 <div className="text-center">
+                <IonRouterLink routerLink='/signupSuccessful'>
                 <ButtonComponent title="Sign Up" style={{ backgroundColor: "#FF0101", 
                                                             color:"white",
                                                             padding:"10px 30px",
@@ -91,6 +92,7 @@ const Signup: React.FC = () => {
                                                             fontSize:"20px",
                                                             borderRadius:"14px"
                                                             }}/>
+                </IonRouterLink>
                 </div>
                 <IonText>
                     <h6 className="text-center">Already have an account? 
