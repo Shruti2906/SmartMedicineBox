@@ -40,7 +40,7 @@ import CheckboxComponent from "../../components/Checkbox/checkboxComponent";
                 color="medium"
                 className="form-control pl-2 mb-3"
                 aria-label="username"
-                style={{ backgroundColor:"gray", color:"white" }}
+                style={{ backgroundColor:"#D9D9D9" }}
                 />
                 
                 <IonLabel className="label">Enter your password</IonLabel>
@@ -50,7 +50,7 @@ import CheckboxComponent from "../../components/Checkbox/checkboxComponent";
                 fill="outline"
                 className="form-control pl-2"
                 aria-label="password"
-                style={{ backgroundColor:"gray" }}
+                style={{ backgroundColor:"#D9D9D9" }}
                 />
 
                 <div className="text-center mb-">

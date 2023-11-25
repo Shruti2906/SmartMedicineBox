@@ -23,7 +23,7 @@ const SplashScreen: React.FC = () => {
           />
 
           
-          <IonButton routerLink="/mobileVerification">Verification</IonButton>
+          <IonButton routerLink="/selectUser">Select User</IonButton>
 
         </div>
       </IonPage>

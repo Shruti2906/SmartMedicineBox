@@ -48,7 +48,7 @@ const MobileVerification: React.FC = () => {
             aria-describedby="get-otp-btn"
             
           />
-          <IonButton type="button" id="get-otp-btn" color="light">
+          <IonButton type="button" id="get-otp-btn" color="dark">
             Get OTP
           </IonButton>
         </div>
@@ -72,7 +72,7 @@ const MobileVerification: React.FC = () => {
             size="large"
             onClick={togglePasswordVisibility}
           ></IonIcon>
-          <IonButton type="button" id="verify-btn" color="light" routerLink="/login">
+          <IonButton type="button" id="verify-btn" color="dark" routerLink="/login">
             Verify
           </IonButton>
         </div>

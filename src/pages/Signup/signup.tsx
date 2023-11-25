@@ -29,7 +29,9 @@ const Signup: React.FC = () => {
                 fill="outline"
                 className="form-control pl-2 mb-3"
                 placeholder="Enter your name"
-                aria-label="name"/>
+                aria-label="name"
+                
+                />
 
                 {/* <IonLabel className="label">Enter your username</IonLabel> */}
                 <IonInput
@@ -65,14 +67,14 @@ const Signup: React.FC = () => {
                 />
 
 
-                <IonSelect className='mb-3' label="Select City" fill="outline" labelPlacement='floating' placeholder="Select City">
+                <IonSelect className='mb-3 select' label="Select City" fill="outline" labelPlacement='floating' placeholder="Select City">
                     <IonSelectOption value="apple">Pune</IonSelectOption>
                     <IonSelectOption value="banana">Nashik</IonSelectOption>
                     <IonSelectOption value="orange">Nagpur</IonSelectOption>
                 </IonSelect>
 
 
-                <IonSelect className='mb-3' label="Select State" fill="outline" labelPlacement='floating' placeholder="Select State">
+                <IonSelect className='mb-3 select' label="Select State" fill="outline" labelPlacement='floating' placeholder="Select State">
                     <IonSelectOption value="apple">Maharashtra</IonSelectOption>
                     <IonSelectOption value="banana">Chhatisgadh</IonSelectOption>
                 </IonSelect>
