@@ -9,13 +9,13 @@ const Signup: React.FC = () => {
         <IonPage>
             <div className="px-5 signup-container">
                 <IonText>
-                    <h1 className="text-center mb-2 mt-5" style={{ color: "#FF0101" }}>
+                    <h1 className="text-center mb-3 mt-5" style={{ color: "#FF0101" }}>
                     Welcome
                     </h1>
                 </IonText>
         
                 <IonText>
-                    <h6 className="text-center mb-5" style={{ color: "gray" }}>
+                    <h6 className="text-center mb-3" style={{ color: "gray" }}>
                     Signup for Smart Medicine Box
                     </h6>
                 </IonText>
@@ -65,22 +65,22 @@ const Signup: React.FC = () => {
                 />
 
 
-            <IonSelect className='mb-3' label="Select City" fill="outline" labelPlacement='floating' placeholder="Select City">
-                <IonSelectOption value="apple">Pune</IonSelectOption>
-                <IonSelectOption value="banana">Nashik</IonSelectOption>
-                <IonSelectOption value="orange">Nagpur</IonSelectOption>
-            </IonSelect>
+                <IonSelect className='mb-3' label="Select City" fill="outline" labelPlacement='floating' placeholder="Select City">
+                    <IonSelectOption value="apple">Pune</IonSelectOption>
+                    <IonSelectOption value="banana">Nashik</IonSelectOption>
+                    <IonSelectOption value="orange">Nagpur</IonSelectOption>
+                </IonSelect>
 
 
-            <IonSelect className='mb-3' label="Select State" fill="outline" labelPlacement='floating' placeholder="Select State">
-                <IonSelectOption value="apple">Maharashtra</IonSelectOption>
-                <IonSelectOption value="banana">Chhatisgadh</IonSelectOption>
-            </IonSelect>
+                <IonSelect className='mb-3' label="Select State" fill="outline" labelPlacement='floating' placeholder="Select State">
+                    <IonSelectOption value="apple">Maharashtra</IonSelectOption>
+                    <IonSelectOption value="banana">Chhatisgadh</IonSelectOption>
+                </IonSelect>
 
 
-                <div className="terms-conditions text-center">
-                    <CheckboxComponent label="" style={{  }}></CheckboxComponent>
-                    <IonText className='p-2'>By clicking on ‘sign up’, you’re agreeing to the <span style={{ color:"#FF0101", fontWeight:"bold"}}> Smart Medicine Box </span> app Terms of Service and Privacy Policy</IonText>
+                <div className="terms-conditions">
+                    <CheckboxComponent label="" style={{ padding:"10px" }}></CheckboxComponent>
+                    <IonText className='terms p-2'>By clicking on ‘sign up’, you’re agreeing to the <span style={{ color:"#FF0101", fontWeight:"bold"}}> Smart Medicine Box </span> app Terms of Service and Privacy Policy</IonText>
                 </div>
 
                 <div className="text-center">
@@ -94,13 +94,6 @@ const Signup: React.FC = () => {
                                                             }}/>
                 </IonRouterLink>
                 </div>
-                <IonText>
-                    <h6 className="text-center">Already have an account? 
-                    <IonRouterLink routerLink="/login">
-                      <a><span style={{ color:"#FF0101", fontWeight:"bold"}}>Log in</span></a>
-                    </IonRouterLink>
-                    </h6>
-                </IonText>
             </div>
 
             </div>

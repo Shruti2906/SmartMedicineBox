@@ -1,6 +1,15 @@
+.login-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
 
+}
 .input-field{
     min-width: 80%;
+    margin-bottom: 20%;
 }
 
 .label{
@@ -13,8 +22,9 @@
     margin: 10px 0;
 }
 .subtitle {
-    margin-top: 60px;
-    margin-bottom: 150px;
+    margin-top: 20%;
+    margin-bottom: 70%;
+    align-items:  start !important;
 }
 
 .checkbox-forgot{
