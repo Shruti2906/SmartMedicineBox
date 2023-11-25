@@ -65,22 +65,22 @@ const Signup: React.FC = () => {
                 />
 
 
-            <IonSelect className='mb-3' label="Select City" fill="outline" labelPlacement='floating' placeholder="Select City">
-                <IonSelectOption value="apple">Pune</IonSelectOption>
-                <IonSelectOption value="banana">Nashik</IonSelectOption>
-                <IonSelectOption value="orange">Nagpur</IonSelectOption>
-            </IonSelect>
+                <IonSelect className='mb-3' label="Select City" fill="outline" labelPlacement='floating' placeholder="Select City">
+                    <IonSelectOption value="apple">Pune</IonSelectOption>
+                    <IonSelectOption value="banana">Nashik</IonSelectOption>
+                    <IonSelectOption value="orange">Nagpur</IonSelectOption>
+                </IonSelect>
 
 
-            <IonSelect className='mb-3' label="Select State" fill="outline" labelPlacement='floating' placeholder="Select State">
-                <IonSelectOption value="apple">Maharashtra</IonSelectOption>
-                <IonSelectOption value="banana">Chhatisgadh</IonSelectOption>
-            </IonSelect>
+                <IonSelect className='mb-3' label="Select State" fill="outline" labelPlacement='floating' placeholder="Select State">
+                    <IonSelectOption value="apple">Maharashtra</IonSelectOption>
+                    <IonSelectOption value="banana">Chhatisgadh</IonSelectOption>
+                </IonSelect>
 
 
                 <div className="terms-conditions">
-                    <CheckboxComponent label="" style={{  }}></CheckboxComponent>
-                    <IonText className='p-2'>By clicking on ‘sign up’, you’re agreeing to the <span style={{ color:"#FF0101", fontWeight:"bold"}}> Smart Medicine Box </span> app Terms of Service and Privacy Policy</IonText>
+                    <CheckboxComponent label="" style={{ padding:"10px" }}></CheckboxComponent>
+                    <IonText className='terms p-2'>By clicking on ‘sign up’, you’re agreeing to the <span style={{ color:"#FF0101", fontWeight:"bold"}}> Smart Medicine Box </span> app Terms of Service and Privacy Policy</IonText>
                 </div>
 
                 <div className="text-center">
