@@ -21,14 +21,11 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import SelectUser from './pages/SelectUser';
+import SelectUser from './pages/SelectUser/SelectUser';
 import MobileVerification from './pages/MobileVerification/mobileVerification';
-import Register from './pages/Register';
 import SplashScreen from './pages/SplashScreen/SplashScreen';
 import Login from './pages/Login/login';
 import Signup from './pages/Signup/signup';
-import BluetoothScanning from './pages/BluetoothScanning/bluetoothScanning';
-import BluetoothComponent from './pages/BluetoothScanning/bluetoothScanning';
 import Homepage from './pages/Homepage/homepage';
 import SignupSuccessful from './pages/signupSuccessful/signupSuccessful';
 
@@ -47,9 +44,6 @@ const App: React.FC = () => (
         <Route exact path="/mobileVerification">
           <MobileVerification />
         </Route>
-        <Route exact path="/register">
-          <Register />
-        </Route>
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>
@@ -64,10 +58,6 @@ const App: React.FC = () => (
         <Route exact path="/signup">
           <Signup/>
         </Route>
-        <Route exact path="/bluetoothScan">
-          <BluetoothComponent/>
-        </Route>
-
         <Route exact path="/homescreen">
           <Homepage/>
         </Route>
