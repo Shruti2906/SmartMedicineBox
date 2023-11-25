@@ -33,8 +33,18 @@
     cursor: pointer;
 }
 
+.container h1{
+    margin-bottom:30%;
+}
 
 .container h6{
-    margin-top: 70px;
-    margin-bottom: 150px;
+    margin-bottom: 90%;
+}
+
+#get-otp-btn{
+    text-transform: none;
+}
+
+#verify-btn{
+    text-transform: capitalize;
 }

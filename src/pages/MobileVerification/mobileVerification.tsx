@@ -41,13 +41,15 @@ const MobileVerification: React.FC = () => {
             label="Mobile Number"
             labelPlacement="floating"
             fill="outline"
+            color="medium"
             className="form-control pl-2"
             placeholder="Enter mobile number"
             aria-label="Recipient's username"
-            aria-describedby="button-addon2"
+            aria-describedby="get-otp-btn"
+            
           />
-          <IonButton type="button" id="button-addon2" color="light">
-            get OTP
+          <IonButton type="button" id="get-otp-btn" color="light">
+            Get OTP
           </IonButton>
         </div>
 
@@ -57,6 +59,7 @@ const MobileVerification: React.FC = () => {
             label="Enter OTP"
             labelPlacement="floating"
             fill="outline"
+            color="medium"
             className="form-control"
             placeholder="Enter mobile number"
             aria-label="Recipient's username"
@@ -69,7 +72,7 @@ const MobileVerification: React.FC = () => {
             size="large"
             onClick={togglePasswordVisibility}
           ></IonIcon>
-          <IonButton type="button" id="button-addon2" color="light" routerLink="/login">
+          <IonButton type="button" id="verify-btn" color="light" routerLink="/login">
             Verify
           </IonButton>
         </div>
