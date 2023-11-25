@@ -12,7 +12,6 @@ const SignupSuccessful: React.FC = () => {
                     imageSrc={ done } 
                     text="" 
                     style={{ width:"120px"}}/>
-
                 
                 <IonText className="title">Your SignUp was successful</IonText>
                 <IonRouterLink routerLink="/homescreen">
