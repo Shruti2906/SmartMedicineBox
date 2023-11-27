@@ -1,7 +1,7 @@
 import { IonButton, IonContent, IonPage } from "@ionic/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./splashScreen.css";
-import ImageWithText from "../../components/ImageWithText";
+import ImageWithText from "../../components/ImageWithText/ImageWithText";
 import splashImage from "/src/assets/images/splashScreen.png";
 const SplashScreen: React.FC = () => {
   return (
