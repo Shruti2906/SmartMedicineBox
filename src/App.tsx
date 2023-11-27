@@ -25,7 +25,7 @@ import MobileVerification from "./pages/MobileVerification/mobileVerification";
 import SplashScreen from "./pages/SplashScreen/SplashScreen";
 import Login from "./pages/Login/login";
 import Signup from "./pages/Signup/signup";
-import Homepage from "./pages/Homepage/homepage";
+import Homepage from "./pages/HomeScreen/homeScreen";
 import SignupSuccessful from "./pages/signupSuccessful/signupSuccessful";
 
 setupIonicReact();
