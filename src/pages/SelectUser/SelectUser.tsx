@@ -8,7 +8,7 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
-import ImageWithText from "../../components/ImageWithText/ImageWithText";
+import ImageWithText from "../../components/ImageWithText/imageWithTextComponent";
 import user from "/src/assets/images/user.png";
 import hospital from "/src/assets/images/Hospital.png";
 import superAdmin from "/src/assets/images/superAdmin.png";

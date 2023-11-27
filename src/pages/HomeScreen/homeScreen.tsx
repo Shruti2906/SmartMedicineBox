@@ -1,7 +1,7 @@
 import { IonPage, IonRouterLink } from "@ionic/react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './homeScreen.css';
-import ButtonComponent from "../../components/Button/ButtonComponent";
+import ButtonComponent from "../../components/Button/buttonComponent";
 
 const Homepage: React.FC = () =>{
     return(

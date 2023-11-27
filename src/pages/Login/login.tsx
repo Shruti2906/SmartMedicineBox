@@ -12,7 +12,7 @@ import {
   } from "@ionic/react";
 import "./login.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ButtonComponent from "../../components/Button/ButtonComponent";
+import ButtonComponent from "../../components/Button/buttonComponent";
 import CheckboxComponent from "../../components/Checkbox/checkboxComponent";
   
   const Login: React.FC = () => {  

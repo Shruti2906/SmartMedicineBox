@@ -20,13 +20,13 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
-import SelectUser from "./pages/SelectUser/SelectUser";
+import SelectUser from "./pages/SelectUser/selectUser";
 import MobileVerification from "./pages/MobileVerification/mobileVerification";
-import SplashScreen from "./pages/SplashScreen/SplashScreen";
+import SplashScreen from "./pages/SplashScreen/splashScreen";
 import Login from "./pages/Login/login";
 import Signup from "./pages/Signup/signup";
 import Homepage from "./pages/HomeScreen/homeScreen";
-import SignupSuccessful from "./pages/signupSuccessful/signupSuccessful";
+import SignupSuccessful from "./pages/SignupSuccessful/signupSuccessful";
 
 setupIonicReact();
 
