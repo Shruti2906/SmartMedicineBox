@@ -1,0 +1,52 @@
+.btn-container{
+    background-color: var(--ion-color-pri);
+}
+
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid .title{
+    background-color: var(--ion-color-pri);
+    padding: 20px;
+    width: 60%;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.prescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.presc-img{
+    width: 100px;
+}
+
+.prescription-list ion-col{
+    padding: 20px;
+}
+
+.manual-prescription-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.manual-prescription{
+    width: 100%;
+    text-align: center;
+}
+
+hr{
+    width: 90%;
+    border: 1px solid #000;
+}

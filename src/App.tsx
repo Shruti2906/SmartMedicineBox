@@ -20,13 +20,17 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
-import SplashScreen from "./pages/SplashScreen/splashScreen";
-import SelectUser from "./pages/SelectUser/selectUser";
+import SplashScreen from "./pages/SplashScreen/SplashScreen";
+import SelectUser from "./pages/SelectUser/SelectUser";
 import MobileVerification from "./pages/MobileVerification/mobileVerification";
 import Login from "./pages/Login/login";
 import Signup from "./pages/Signup/signup";
 import Homepage from "./pages/HomeScreen/homeScreen";
-import SignupSuccessful from "./pages/SignupSuccessful/signupSuccessful";
+import SignupSuccessful from "./pages/signupSuccessful/signupSuccessful";
+import CreateScheduleTablet from "./pages/CreateScheduleTablet/CreateScheduleTablet";
+import CreateScheduleLiquid from "./pages/CreateScheduleLiquid/CreateScheduleLiquid";
+import CreateScheduleInsulin from "./pages/CreateScheduleInsulin/CreateScheduleInsulin";
+import ViewPrescription from "./pages/ViewPrescripton/ViewPrescription";
 
 setupIonicReact();
 
@@ -61,6 +65,23 @@ const App: React.FC = () => (
         <Route exact path="/signupSuccessful">
           <SignupSuccessful />
         </Route>
+
+        <Route exact path="/createTabletSchedule">
+          <CreateScheduleTablet/>
+        </Route>
+
+        <Route exact path="/createLiquidSchedule">
+          <CreateScheduleLiquid/>
+        </Route>
+
+        <Route exact path="/createInsulinSchedule">
+          <CreateScheduleInsulin/>
+        </Route>
+        <Route exact path="/viewPrescription">
+          <ViewPrescription/>
+        </Route>
+        
+
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

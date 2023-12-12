@@ -1,6 +1,6 @@
 import { IonInput, IonItem, IonLabel, IonList, IonPage, IonRouterLink, IonSelect, IonSelectOption, IonText } from '@ionic/react';
 import './signup.css';
-import ButtonComponent from '../../components/Button/buttonComponent';
+import ButtonComponent from '../../components/Button/ButtonComponent';
 import CheckboxComponent from '../../components/Checkbox/checkboxComponent';
 
 
