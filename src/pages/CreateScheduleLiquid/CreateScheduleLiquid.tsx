@@ -19,17 +19,6 @@ const CreateScheduleLiquid: React.FC = () => {
   return (
     <IonPage className="content">
       <div className="container-fluid">
-        {/* <div className="header-container">
-          <div className="title">
-            <h1 className="text-center">Create Schedule</h1>
-            <h1 className="text-center">(Liquid)</h1>
-          </div>
-
-          <div className="icon-container">
-            <IonIcon className="icon" icon={add}></IonIcon>
-          </div>
-        </div> */}
-
         <div className="title-container">
           <div className="title-part p-5">
             <h1 className="text-center">Create Schedule</h1>

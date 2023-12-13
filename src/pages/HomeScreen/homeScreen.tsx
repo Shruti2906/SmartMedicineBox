@@ -1,52 +1,103 @@
-import { IonPage, IonRouterLink } from "@ionic/react";
+import { IonButton, IonCol, IonGrid, IonImg, IonPage, IonRouterLink, IonRow, IonText } from "@ionic/react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './homeScreen.css';
-import ButtonComponent from "../../components/Button/ButtonComponent";
+import createSchedule from '/src/assets/images/createSchedule.png';
+import viewSchedule from '/src/assets/images/view_schedule.png';
+import uploadPres from '/src/assets/images/upload_prescription.png';
+import viewPres from '/src/assets/images/view_prescription.png';
+import appointment from '/src/assets/images/appointment.png';
+
 
 const Homepage: React.FC = () =>{
     return(
-        <IonPage className="bg-dark text-light d-flex justify-content-center">
-            <div>
-                <div className="title mt-auto">
-                    <h5 className="text-center">Welcome Username</h5>
+        <IonPage className="bg-light text-light d-flex justify-content-center">
+            <div className="container-fluid">
+                <div className="title mt-5">
+                    <h3 className="text-center">Welcome Username</h3>
                 </div>
-                <div className="text-center">
-                    <IonRouterLink routerLink="/createLiquidSchedule">
-                    <ButtonComponent title="Create Liquid Shedule" style={{ color:"white",
-                                                                    backgroundColor:"gray",
-                                                                    width:"150px",
-                                                                    margin: "0 10px",
-                                                                    padding:"10px 0"
-                    }}/>
-                    </IonRouterLink>
 
-                    <IonRouterLink routerLink="/createInsulinSchedule">
-                    <ButtonComponent title="Create Insulin Shedule" style={{ color:"white",
-                                                                    backgroundColor:"gray",
-                                                                    width:"150px",
-                                                                    margin: "0 10px",
-                                                                    padding:"10px 0"
-                    }}/>
-                    </IonRouterLink>
-                </div><br/>
-                <div className="text-center">
-                    <ButtonComponent title="Create Shedule" style={{ color:"white",
-                                                                    backgroundColor:"gray",
-                                                                    width:"150px",
-                                                                    margin: "0 10px",
-                                                                    padding:"10px 0"
-                    }}/>
+                {/* Four buttons */}
+                <div className="four-buttons">
+                <IonGrid>
+                    <IonRow>
+                        <IonCol>
+                            <IonRouterLink routerLink="/createLiquidSchedule">
+                            <div className="image-btn">
+                                <div className="image">
+                                    <IonImg  src={ createSchedule } style={{ width:"50px" }} ></IonImg>
+                                </div>
+                                <IonText className="p-1 text-center mt-auto">Create Schedule</IonText>
+                            </div>
+                            </IonRouterLink>
+                        </IonCol>
+                        <IonCol>
+                        <IonRouterLink routerLink="/createInsulinSchedule">
+                            <div className="image-btn">
+                                <div className="image">
+                                    <IonImg  src={ viewSchedule } style={{ width:"50px" }} ></IonImg>
+                                </div>
+                                <IonText className="p-1 text-center mt-auto">View Schedule</IonText>
+                            </div>
+                        </IonRouterLink>
+                        </IonCol>
+                    </IonRow>
+                    <IonRow>
+                        <IonCol>
+                        <IonRouterLink routerLink="/createLiquidSchedule">
+                            <div className="image-btn">
+                                <div className="image">
+                                    <IonImg  src={ uploadPres } style={{ width:"50px" }} ></IonImg>
+                                </div>
+                                <IonText className="p-1 text-center mt-auto">Upload Prescription</IonText>
+                            </div>
+                        </IonRouterLink>
+                        </IonCol>
+                        <IonCol>
+                        <IonRouterLink routerLink="/viewPrescription">
+                            <div className="image-btn">
+                                <div className="image">
+                                    <IonImg  src={ viewPres } style={{ width:"50px" }} ></IonImg>
+                                </div>
+                                <IonText className="p-1 text-center mt-auto">View Prescription</IonText>
+                            </div>
+                        </IonRouterLink>
+                        </IonCol>
+                    </IonRow>
+                </IonGrid>
+                </div>
 
-                    <IonRouterLink routerLink="/viewPrescription">
-                    <ButtonComponent title="View Shedule" style={{ color:"white",
-                                                                    backgroundColor:"gray",
-                                                                    width:"150px",
-                                                                    margin: "0 10px",
-                                                                    padding:"10px 0"    
-                    }}/>
-                    </IonRouterLink>
-                </div>  
-                    
+                {/* Liquid Percentages */}
+                <IonGrid className="mt-4">
+                    <IonRow className="py-2">
+                        <IonCol className="medicine-name" size="8">
+                            <IonText>Zedex</IonText>
+                        </IonCol>
+                        <IonCol className="medicine-per" offset="1">
+                            <IonText>60%</IonText>
+                        </IonCol>
+                    </IonRow>
+                    <IonRow className="py-2">
+                        <IonCol className="medicine-name" size="8">
+                            <IonText>Insulin</IonText>
+                        </IonCol>
+                        <IonCol className="medicine-per" offset="1">
+                            <IonText>30%</IonText>
+                        </IonCol>
+                    </IonRow>
+                    <IonRow className="py-2">
+                        <IonCol className="medicine-name" size="8">
+                            <IonText>Benadryl</IonText>
+                        </IonCol>
+                        <IonCol className="medicine-per" offset="1">
+                            <IonText>60%</IonText>
+                        </IonCol>
+                    </IonRow>
+                </IonGrid>
+
+                {/* Appointment Button */}
+                <div className="appointment-btn">
+                    <IonButton color="medium" className="p-2"> <IonImg className="p-1" src={ appointment } style={{ width:"50px" }}></IonImg> Appointment</IonButton>
+                </div>
             </div>
             
         </IonPage>
