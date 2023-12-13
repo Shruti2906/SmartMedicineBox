@@ -6,6 +6,7 @@ import viewSchedule from '/src/assets/images/view_schedule.png';
 import uploadPres from '/src/assets/images/upload_prescription.png';
 import viewPres from '/src/assets/images/view_prescription.png';
 import appointment from '/src/assets/images/appointment.png';
+import ButtonComponent from "../../components/Button/ButtonComponent";
 
 
 const Homepage: React.FC = () =>{
@@ -95,9 +96,12 @@ const Homepage: React.FC = () =>{
                 </IonGrid>
 
                 {/* Appointment Button */}
-                <div className="appointment-btn">
-                    <IonButton color="medium" className="p-2"> <IonImg className="p-1" src={ appointment } style={{ width:"50px" }}></IonImg> Appointment</IonButton>
+                <IonRouterLink routerLink="/">
+                <div className="apt-btn my-2">
+                    <IonImg className="p-1" src={ appointment } style={{ width:"50px" }}></IonImg>
+                    <IonText >Appointment</IonText>
                 </div>
+                </IonRouterLink>
             </div>
             
         </IonPage>
