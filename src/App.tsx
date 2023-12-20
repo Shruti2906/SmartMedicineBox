@@ -33,6 +33,7 @@ import CreateScheduleTablet from "./pages/CreateScheduleTablet/CreateScheduleTab
 import CreateScheduleLiquid from "./pages/CreateScheduleLiquid/CreateScheduleLiquid";
 import CreateScheduleInsulin from "./pages/CreateScheduleInsulin/CreateScheduleInsulin";
 import ViewPrescription from "./pages/ViewPrescripton/ViewPrescription";
+import SelectMedicine from "./pages/SelectMedicine/SelectMedicine";
 import manualUploadPrescription from "./pages/manualUploadPrescription/manualUploadPrescription";
 import uploadPrescription from "./pages/uploadPrescription/uploadPrescription";
 
@@ -83,6 +84,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/viewPrescription">
           <ViewPrescription />
+        </Route>
+        <Route exact path="/selectMedicine">
+          <SelectMedicine/>
         </Route>
         <Route
           path="/upload-prescription"
