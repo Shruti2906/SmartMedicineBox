@@ -1,0 +1,14 @@
+table input {
+  width: 8.5vh;
+  margin: 3px;
+}
+
+td {
+  width: 2vh;
+  margin-bottom: 10px;
+}
+
+IonList {
+  width: 1vh;
+  margin-bottom: 10px;
+}

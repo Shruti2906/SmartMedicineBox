@@ -18,6 +18,8 @@ import "@ionic/react/css/text-transformation.css";
 import "@ionic/react/css/flex-utils.css";
 import "@ionic/react/css/display.css";
 
+import "font-awesome/css/font-awesome.min.css";
+
 /* Theme variables */
 import "./theme/variables.css";
 import SplashScreen from "./pages/SplashScreen/SplashScreen";
@@ -31,6 +33,8 @@ import CreateScheduleTablet from "./pages/CreateScheduleTablet/CreateScheduleTab
 import CreateScheduleLiquid from "./pages/CreateScheduleLiquid/CreateScheduleLiquid";
 import CreateScheduleInsulin from "./pages/CreateScheduleInsulin/CreateScheduleInsulin";
 import ViewPrescription from "./pages/ViewPrescripton/ViewPrescription";
+import manualUploadPrescription from "./pages/manualUploadPrescription/manualUploadPrescription";
+import uploadPrescription from "./pages/uploadPrescription/uploadPrescription";
 
 setupIonicReact();
 
@@ -67,21 +71,29 @@ const App: React.FC = () => (
         </Route>
 
         <Route exact path="/createTabletSchedule">
-          <CreateScheduleTablet/>
+          <CreateScheduleTablet />
         </Route>
 
         <Route exact path="/createLiquidSchedule">
-          <CreateScheduleLiquid/>
+          <CreateScheduleLiquid />
         </Route>
 
         <Route exact path="/createInsulinSchedule">
-          <CreateScheduleInsulin/>
+          <CreateScheduleInsulin />
         </Route>
         <Route exact path="/viewPrescription">
-          <ViewPrescription/>
+          <ViewPrescription />
         </Route>
-        
-
+        <Route
+          path="/upload-prescription"
+          component={uploadPrescription}
+          exact={true}
+        />
+        <Route
+          path="/manual-prescription"
+          component={manualUploadPrescription}
+          exact={true}
+        />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
