@@ -31,6 +31,7 @@ import CreateScheduleTablet from "./pages/CreateScheduleTablet/CreateScheduleTab
 import CreateScheduleLiquid from "./pages/CreateScheduleLiquid/CreateScheduleLiquid";
 import CreateScheduleInsulin from "./pages/CreateScheduleInsulin/CreateScheduleInsulin";
 import ViewPrescription from "./pages/ViewPrescripton/ViewPrescription";
+import SelectMedicine from "./pages/SelectMedicine/SelectMedicine";
 
 setupIonicReact();
 
@@ -79,6 +80,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/viewPrescription">
           <ViewPrescription/>
+        </Route>
+        <Route exact path="/selectMedicine">
+          <SelectMedicine/>
         </Route>
         
 
