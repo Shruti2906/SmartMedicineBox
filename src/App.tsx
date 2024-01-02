@@ -36,6 +36,7 @@ import ViewPrescription from "./pages/ViewPrescripton/ViewPrescription";
 import SelectMedicine from "./pages/SelectMedicine/SelectMedicine";
 import manualUploadPrescription from "./pages/manualUploadPrescription/manualUploadPrescription";
 import uploadPrescription from "./pages/uploadPrescription/uploadPrescription";
+import WifiConnectivity from "./pages/Wifi-Connectivity/WifiConnectivity";
 
 setupIonicReact();
 
@@ -91,13 +92,16 @@ const App: React.FC = () => (
         <Route
           path="/upload-prescription"
           component={uploadPrescription}
-          exact={true}
         />
         <Route
           path="/manual-prescription"
           component={manualUploadPrescription}
           exact={true}
         />
+
+        <Route exact path="/WifiConnectivity">
+          <WifiConnectivity/>
+        </Route>
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

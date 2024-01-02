@@ -8,6 +8,7 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
+import { Network } from '@capacitor/network'; 
 import ImageWithText from "../../components/ImageWithText/imageWithTextComponent";
 import user from "/src/assets/images/user.png";
 import hospital from "/src/assets/images/Hospital.png";
